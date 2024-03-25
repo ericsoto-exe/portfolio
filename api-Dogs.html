@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog's API</title>
+    <!-- Main CSS address -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <!-- CSS animations importer from Animation.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="src/logo-bitOsoft-entire-horizontal-2nd-transparent.png" alt="bitOsoft"
+                    class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#myself">About me</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                </ul>
+            </nav>
+            <img src="src/menu.png" alt="bitOsoft" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <section class="main-body">
+        <section id="1st">
+            <div class="row">
+                <div class="col-1">
+                    <div class="person">
+                        <div class="p-container">
+                            <div class="p-container-inner">
+                                <img class="circle" src="src/2nd-bg-variante-a.png" />
+                                <img class="img img1" src="src/2nd-bg-top.png" />
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="name">Dog's API</div>
+                        <div class="title">API implementation with JavaScript.</div>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <h2>What's <b>this</b>?</h2>
+                    <h3>All questions will be answered...</h3>
+                    <p>This is the API's implementation of the internet's biggest collection of open source dog
+                        pictures.
+                    </p>
+                    <h4><b>It is okay if you ask "Who let the dogs out?" at this point...</b></h4>
+                    <div id="breed">
+                    </div> <br>
+                    <a href="https://dog.ceo/dog-api/"><button type="button">Read more about this API from their
+                            creators.<img src="src/arrow.png" alt="Portfolio redirection"></button></a>
+                </div>
+            </div>
+        </section>
+        <div class="api-slideshow" id="api-slideshow">
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2022 bitOsoft.</p>
+        </div>
+        <script src="api-Dogs.js"></script>
+</body>
+
+</html>

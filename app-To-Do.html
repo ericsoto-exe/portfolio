@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bitOsoft's To-Do App</title>
+    <!-- Main CSS address -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <!-- CSS animations importer from Animation.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="src/logo-bitOsoft-entire-horizontal-2nd-transparent.png" alt="bitOsoft"
+                    class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#myself">About me</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                </ul>
+            </nav>
+            <img src="src/menu.png" alt="bitOsoft" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <section class="main-body">
+        <section id="1st">
+            <div class="row">
+                <div class="col-1">
+                    <div class="person">
+                        <div class="p-container">
+                            <div class="p-container-inner">
+                                <img class="circle" src="src/2nd-bg-variante-a.png" />
+                                <img class="img img1" src="src/4th-bg-top.png" />
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="name">To-Do Online App</div>
+                        <div class="title">A To-Do Online App with JavaScript.</div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h2>Want <b>to do</b> a list?</h2>
+                    <h3>Count with me!</h3>
+                    <p>This is my first APP, it is supposed to be a To-Do Online App.</p>
+                    <h4><b>I will remind you what to do, be safe!</b></h4>
+                </div>
+            </div>
+            <div class="innertoDoApp center">
+                <h3>Need To Do <br><br></h3>
+                <form id="toDoForm">
+                    <input id="toDoField" type="text" autocomplete="off">
+                    <button class="buttonToDo">✓</button>
+                </form>
+                <ul id="toDoList">
+                </ul>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2022 bitOsoft.</p>
+        </div>
+        <script src="app-To-Do.js"></script>
+</body>
+
+</html>

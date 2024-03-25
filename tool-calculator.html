@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <!-- Main CSS address -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <!-- CSS animations importer from Anmation.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><img src="src/logo-bitOsoft-entire-horizontal-2nd-transparent.png" alt="bitOsoft"
+                    class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#myself">About me</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                </ul>
+            </nav>
+            <img src="src/menu.png" alt="bitOsoft" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <section class="main-body">
+        <section id="1st">
+            <div class="row">
+                <div class="col-1">
+                    <div class="person">
+                        <div class="p-container">
+                            <div class="p-container-inner">
+                                <img class="circle" src="src/2nd-bg-variante-a.png" />
+                                <img class="img img1" src="src/3rd-bg-top.png" />
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="name">Online Calculator</div>
+                        <div class="title">And online basic calculator with JavaScript.</div>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <h2>Want to <b>calculate</b> something?</h2>
+                    <h3>I got your back...</h3>
+                    <p>With my ultimate basic calculator, you will sort all your finances.</p>
+                    <h4><b>4 out of 3 people struggle with math, don't be one.</b></h4>
+                </div>
+            </div>
+            <div id="calculatorDiv" class="center">
+                <div class="calculator-box" id="calculator-box"></div>
+                <div class="calculatorGrid">
+                    <div class="buttonC" id="delete-all">C</div>
+                    <div class="buttonC" id="parentesysSignal1">(</div>
+                    <div class="buttonC" id="parentesysSignal2">)</div>
+                    <div class="buttonC" id="divisionSignal">/</div>
+                    <div class="buttonC" id="num7" onclick="">7</div>
+                    <div class="buttonC" id="num8" onclick="">8</div>
+                    <div class="buttonC" id="num9" onclick="">9</div>
+                    <div class="buttonC" id="multplifySignal" onclick="">*</div>
+                    <div class="buttonC" id="num4" onclick="">4</div>
+                    <div class="buttonC" id="num5" onclick="">5</div>
+                    <div class="buttonC" id="num6" onclick="">6</div>
+                    <div class="buttonC" id="minusSignal" onclick="">-</div>
+                    <div class="buttonC" id="num1" onclick="">1</div>
+                    <div class="buttonC" id="num2" onclick="">2</div>
+                    <div class="buttonC" id="num3" onclick="">3</div>
+                    <div class="buttonC" id="plusSignal" onclick="">+</div>
+                    <div class="buttonC" id="num0" onclick="">0</div>
+                    <div class="buttonC" id="dotSignal">.</div>
+                    <div class="buttonC" id="delete-one">←</div>
+                    <div class="buttonC" id="equalSignal">=</div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2022 bitOsoft.</p>
+        </div>
+        <script src="tool-calculator.js"></script>
+</body>
+
+</html>
